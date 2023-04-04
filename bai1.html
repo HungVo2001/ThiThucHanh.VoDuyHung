@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thi Thực Hành </title>
+</head>
+<body>
+    <script>
+        function prize(a, b, c) {
+            let delta = Math.pow(b,2) - (4 * a * c);
+            if (a + b + c == 0) {
+                console.log(`x1 = 1, x2 = ${c / a}`);
+            }
+            if (a - b + c == 0) {
+                console.log(`x1 = -1, x2 = ${-c / a}`);
+            }
+            if (delta < 0) {
+                console.log("Phương trình vô nghiệm");
+            } else if (delta == 0) {
+                console.log(`Phương trình có nghiệm kép x1 = x2 = ${-b / 2 * a}`);
+            } else {
+                console.log(`Phương trình có 2 nghiệm x1 = ${(-b + Math.sqrt(delta)) / (2 * a)},
+                             x2 = ${(-b - Math.sqrt(delta)) / (2 * a)}`);
+            }
+        }
+        prize(8,12,-20);
+    </script>
+</body>
+</html>

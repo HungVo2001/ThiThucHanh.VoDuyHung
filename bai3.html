@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+</head>
+<body>
+    <script>
+        let arrA = ['a','b','c','d','e','f','i'];
+        function jawArray(array){
+            let jaw = ['a','o','e','u','i'];
+            let isIn = false;
+            for(var i = 0; i<jaw.length;i++){
+                for(var j = 0; j <array.length;j++){
+                    if(jaw[i] == array[j]){
+                        isIn = true;
+                        break;
+                    }
+                }
+            }
+            return isIn;
+        }
+        function vowelArray(array){
+            let vowel = ['a','o','e','u','i'];
+            let count = 0;
+            for(var i = 0; i<vowel.length;i++){
+                for(var j = 0; j <array.length;j++){
+                    if(vowel[i] == array[j]){
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+        console.log(jawArray(arrA));
+        console.log(vowelArray(arrA));
+    </script>
+</body>
+</html>

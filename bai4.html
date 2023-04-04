@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai4</title>
+</head>
+<body>
+    <script>
+        class Staff{
+            constructor(fullname,email){
+                this.fullname = fullname;
+                this.email = email;
+            }
+            setFullname(fullname) {
+                this.fullname = fullname;
+            }
+            setEmail(email){
+                this.email = email;
+            }
+            getfullname(){
+                return this.fullname;
+            }
+            getEmail(){
+                return this.email;
+            }
+            toString(){
+                return `Staff có tên ${this.fullname}, có email ${this.email}`
+            }
+        }
+        let david = new Staff("David","david@gmail.com");
+        david.setFullname("David Do");
+        david.setEmail("david.do@gmail.com")
+        console.log(david.toString());
+        let jame = new Staff("Jame Dang","jame.dang@gmail.com");
+        let ada = new Staff("Ada Vo","ada.vo@gmail.com");
+        let staffs = [david,jame,ada];
+        console.log(ada.toString())
+
+    </script>
+</body>
+</html>
