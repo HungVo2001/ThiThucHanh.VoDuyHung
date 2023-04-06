@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính trung bình cộng các số dương trong mảng 1 chiều các số thực</title>
+</head>
+
+<body>
+    <script>
+        function AvgPositive(x) {
+            let count = 0;
+            let total = 0;
+            for(let i = 0; i <x.length; i++){
+                if(x[i] > 0){
+                    count ++;
+                    total += x[i]
+                }
+            }
+            let Avg = total / count;
+            return Avg;
+        }
+        let x = [2,7,8,21]
+        console.log(AvgPositive(x));
+        
+    </script>
+</body>
+
+</html>

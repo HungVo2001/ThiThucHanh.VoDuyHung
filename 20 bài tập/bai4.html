@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đảo ngược mảng ban đầu</title>
+</head>
+<body>
+    <script>
+        let Array = [1,2,3,4,5];
+        
+        for(i = 0; i <Array.length/2; i++){
+            let temp = Array[i];
+            Array[i] = Array[Array.length - 1 - i];
+            Array[Array.length - 1 - i] = temp;
+        }
+        console.log(Array);
+    </script>
+</body>
+</html>

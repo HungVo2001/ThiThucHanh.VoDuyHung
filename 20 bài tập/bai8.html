@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm Số dương chia hết cho 7 trong mảng</title>
+</head>
+<body>
+    <script>
+        
+       function countPositiveMod7(x){
+        let total = 0;
+        let count = 0;
+        for(let i =0; i<x.lenght ; i++){
+            if(x[i] >0 && x[i]%7 ==0){
+                count ++;
+                total += x[i];
+            }
+        }
+        return (total);
+       }
+       let x = [2,7,8,-14,21]
+       console.log(countPositiveMod7(x));
+    </script>
+</body>
+</html>
